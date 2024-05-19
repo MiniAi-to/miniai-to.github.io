@@ -1,0 +1,84 @@
+<!DOCTYPE html><!--This webpage prompts you to enter the information including the username and password, if you dont have an account you can sign up with email-->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="AboutUs.html"><i class="fa fa-fw fa-graduation-cap"></i><b>ABOUT US</b></a>
+        <a href="my chores.html"><i class="fa fa-fw fa-home"></i><b>CHORES</b></a>
+        <a href="my completers.html"><i class="fa fa-fw fa-trophy"></i><b>COMPLETERS</b></a>
+        <a href="myProfile.html" style="float:right">My Profile</a>
+        <a href="Sponsors.html"><i class="fa fa-fw fa-graduation-cap"></i><b>SPONSORS</b></a>
+        <a href="design.html" style="float:initial"><b>CHORE</b></a>
+      </div>
+      <center>
+      <h1>Profile Page</h1>
+      <div id="login-form"><!--Log in Form-->
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <button type="button" onclick="login()">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign up</a> here.</p>
+      </div>
+      <div id="signup-form" style="display:none">
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a> here.</p>
+      </div>
+    </center>
+    <script>
+        function login() {
+          // code to handle login
+          // you can use the values entered in the inputs to verify the user
+      
+          // Show the "Welcome to Chore" prompt
+          alert("Welcome to Chore");
+      
+          // Show the profile page
+          // You can use JavaScript to change the visibility of the profile page element
+          // or use JavaScript to redirect to the profile page
+        }
+      
+        function signup() {
+          // code to handle signup
+          // you can use the values entered in the inputs to create a new user
+          // and show the profile page
+        }
+      
+        function showSignUp() {
+          document.getElementById("login-form").style.display = "none";
+          document.getElementById("signup-form").style.display = "block";
+        }
+      
+        function showLogin() {
+          document.getElementById("login-form").style.display = "block";
+          document.getElementById("signup-form").style.display = "none";
+        }
+      </script>
+      
+</body>
+</html>

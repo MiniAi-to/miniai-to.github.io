@@ -1,0 +1,69 @@
+<!DOCTYPE html><!--This website has external links to all the sponsors and a prompt if you click the invest button. YOu enter your information then see how much you own.-->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="spons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="AboutUs.html"><i class="fa fa-fw fa-graduation-cap"></i><b>ABOUT US</b></a>
+        <a href="my chores.html"><i class="fa fa-fw fa-home"></i><b>CHORES</b></a>
+        <a href="my completers.html"><i class="fa fa-fw fa-trophy"></i><b>COMPLETERS</b></a>
+        <a href="myProfile.html" style="float:right">My Profile</a>
+        <a href="Sponsors.html"><i class="fa fa-fw fa-graduation-cap"></i><b>SPONSORS</b></a>
+        <a href="design.html" style="float:initial"><b>CHORE</b></a>
+      </div>
+      <h1><center>Our Sponsors</center></h1>
+      <div class="sponsor-container">
+        <div class="sponsor">
+        <!--ADP Sponsor Description-->
+        <a href="https://www.adp.com">
+        <img src="Images/adp.png" alt="ADP Logo">
+        </a>
+        <h2>ADP</h2>
+        <p>Automatic Data Processing, Inc. (ADP) is a provider of human resources management software and services. It offers a range of solutions for businesses of all sizes, including payroll processing, talent management, and benefits administration.</p>
+        </div>
+        <div class="sponsor">
+        <!--Bloomberg Sponsor Description-->
+        <a href="https://www.bloomberg.com">
+        <img src="Images/bloomberg.png" alt="Bloomberg Logo">
+        </a>
+        <h2>Bloomberg</h2>
+        <p>Bloomberg L.P. is a financial software, data, and media company that provides financial news and data, research, and analytics to decision makers in various industries. It also offers a range of financial software tools, such as the Bloomberg Terminal.</p>
+        </div>
+        <div class="sponsor">    
+        <!--ADP Sponsor Description-->
+        <a href="https://www.microsoft.com">
+        <img src="Images/microsoft.png" alt="Microsoft">
+        </a>
+        <h2>Microsoft</h2>
+        <p>Microsoft Corporation is an American multinational technology company that develops, licenses, and sells computer software, consumer electronics, and personal computers and services. It is best known for its Windows operating system and the Microsoft Office suite.</p>
+        </div>
+      </div> 
+      <script>
+        function investPrompt() {
+          if (confirm("Do you want to invest in our company?")) {
+            var investment = prompt("Please enter the amount you would like to invest in CAD (Canadian dollars)", "");
+            if (investment != null) {
+              
+              // Get credit card information
+              var cardNumber = prompt("Please enter your credit card number", "");
+              var expDate = prompt("Please enter the expiration date (MM/YY)", "");
+              var cvv = prompt("Please enter the CVV code (3 Digits)", "");
+              
+              var ownershipPercentage = (investment / 1000000) * 100;
+              alert("Thank you for your investment of " + investment + " CAD! You now own " + ownershipPercentage + "% of our company.");
+            }
+          }
+        }
+      </script>
+      <button onclick="investPrompt()">Invest Now!</button>           
+</body>
+</html>

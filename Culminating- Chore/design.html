@@ -1,0 +1,38 @@
+<!DOCTYPE html><!--This webpage shows the homepage with a simple design. It has a interactive button that takes you to login page -->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head> 
+<body>
+    <div class="topnav">
+        <a href="AboutUs.html"><i class="fa fa-fw fa-graduation-cap"></i><b>ABOUT US</b></a>
+        <a href="my chores.html"><i class="fa fa-fw fa-home"></i><b>CHORES</b></a>
+        <a href="my completers.html"><i class="fa fa-fw fa-trophy"></i><b>COMPLETERS</b></a>
+        <a href="myProfile.html" style="float:right">My Profile</a>
+        <a href="Sponsors.html"><i class="fa fa-fw fa-graduation-cap"></i><b>SPONSORS</b></a>
+        <a href="design.html" style="float:initial"><b>CHORE</b></a>
+      </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <div class="container"> 
+          <br>
+          <img src="Images/shutterstock_14372490082-scaled.jpg" alt="Clean" style="width:100%">
+          <div class="centered2">CHORE</div>
+          <script>//button function
+            function myFunction() {
+              document.getElementById("my chores.html").innerHTML = "Hello World";
+            }
+            </script>
+          <div class="centered"><a href="myProfile.html" class="green-button">Log In</a></div> 
+      </div>  
+</body>
+</html>
